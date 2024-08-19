@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="form-content">
+        <form action="https://formsubmit.co/cosmebios@gmail.com" method="POST">
+            <h2>Operadores SMO</h2>
+
+            <label for="name">Numero de Empleado</label>
+            <input type="text" name = nombre id = "name">
+
+            <label for="name">Fecha</label>
+            <input type="datetime-local" />
+
+            <label for="name">¿Cuál es la ruta que llevas?</label>
+            <input type="text" name = ruta id = "name">
+
+            <label for="name">¿Cuál es la tienda afectada?</label>
+            <input type="text" name = tienda id = "name">
+
+            <div class="pregresp">
+                <label for="name">¿Qué deseas registrar?<br/><br/>
+                </div>
+                    <label>
+                        <input type="radio" name="option" value="Incidencia">  A) Incidencia de carga<br />
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="Incumplimiento"> B) Incumplimiento de tienda<br />
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="NSPEntregar"> C) No se puede entregar tienda<br />
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="Recomendación"> D) Recomendación a CEDIS<br />
+                    </label>
+    
+            <label for="name">Selecciona una o más de las siguientes opciones</label><br/>
+
+            <select id="mySelect">
+                <option name="option" value="default">Seleccione una opción</option><br/>
+            </select><br/><br/>
+           
+            <label for="coments">Favor de detallar la situación:
+            </label><br/><br/>
+            <textarea name="coments" id = comentarios cols="30" rows = "5"></textarea>
+
+            <input class="btn" type="submit" value="Enviar">
+
+            <input type="hidden" type="_next" value="http://127.0.0.1:5500/">
+
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+    </div>
+
+        </form>
+        <script src="Programacion.js"></script>
+
+
+    </div>
+    
+</body>
+</html>
